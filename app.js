@@ -21,30 +21,29 @@ function generateComputerChoice() {
     } else {
         computerChoice = 'paper'
     }
-
     computer.innerHTML = computerChoice
 }
 
 function getResult() {
     if (computerChoice == selectedChoice) {
-        result.innerHTML = 'its a draw'
+        result.innerHTML = 'Its a draw'
     }
     if (computerChoice == 'rock' && selectedChoice == 'paper') {
-        result.innerHTML = 'you win!'
+        result.innerHTML = 'You win!'
     }
     if (computerChoice == 'rock' && selectedChoice == 'scissors') {
-        result.innerHTML = 'you lost!'
+        result.innerHTML = 'You lost!'
     }
     if (computerChoice == 'paper' && selectedChoice == 'scissors') {
-        result.innerHTML = 'you win!'
+        result.innerHTML = 'You win!'
     }
     if (computerChoice == 'paper' && selectedChoice == 'rock') {
-        result.innerHTML = 'you lost!'
+        result.innerHTML = 'You lost!'
     }
     if (computerChoice == 'scissors' && selectedChoice == 'rock') {
-        result.innerHTML = 'you win!'
+        result.innerHTML = 'You win!'
     }
     if (computerChoice == 'scissors' && selectedChoice == 'paper') {
-        result.innerHTML = 'you lost!'
+        result.innerHTML = 'You lost!'
     }
 }
